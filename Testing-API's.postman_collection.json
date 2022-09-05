@@ -1,0 +1,197 @@
+{
+	"info": {
+		"_postman_id": "f0ad9a77-65d1-4d1f-bb7b-5e77c4384735",
+		"name": "Testing-API's",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20621217"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"usernameOrEmail\": \"super.admin@test.com\",\r\n \"password\": \"Password12\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qa.api-sam.etugra.com.pk:6050/rss/service/admin/v1/operators/authenticate",
+					"protocol": "https",
+					"host": [
+						"qa",
+						"api-sam",
+						"etugra",
+						"com",
+						"pk"
+					],
+					"port": "6050",
+					"path": [
+						"rss",
+						"service",
+						"admin",
+						"v1",
+						"operators",
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Modules-list",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjYyMzY0NzMxLCJleHAiOjE2NjIzODYzMzEsIlJPTEVfU1lTVEVNX1VTRVIiOiJ0cnVlIiwiUk9MRV9VU0VSX01BTkFHRVIiOiJmYWxzZSIsIlJPTEVfU0lHTklOR19VU0VSIjoiZmFsc2UifQ.fWm2dbePF7vyXoAfKwwJVX4vOVWrTbtEgS9e--xp8wwSPYdxrY43FZgbn99HyF6b02Cjpa4W1KpkqlLEfM48Iw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qa.api-sam.etugra.com.pk:6050/rss/service/admin/v1/modules/list",
+					"protocol": "https",
+					"host": [
+						"qa",
+						"api-sam",
+						"etugra",
+						"com",
+						"pk"
+					],
+					"port": "6050",
+					"path": [
+						"rss",
+						"service",
+						"admin",
+						"v1",
+						"modules",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Auth-Apps",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjYyMzY0NzMxLCJleHAiOjE2NjIzODYzMzEsIlJPTEVfU1lTVEVNX1VTRVIiOiJ0cnVlIiwiUk9MRV9VU0VSX01BTkFHRVIiOiJmYWxzZSIsIlJPTEVfU0lHTklOR19VU0VSIjoiZmFsc2UifQ.fWm2dbePF7vyXoAfKwwJVX4vOVWrTbtEgS9e--xp8wwSPYdxrY43FZgbn99HyF6b02Cjpa4W1KpkqlLEfM48Iw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qa.api-sam.etugra.com.pk:6050/rss/service/admin/v1/applications/list",
+					"protocol": "https",
+					"host": [
+						"qa",
+						"api-sam",
+						"etugra",
+						"com",
+						"pk"
+					],
+					"port": "6050",
+					"path": [
+						"rss",
+						"service",
+						"admin",
+						"v1",
+						"applications",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Privil-Roles",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxIiwiaWF0IjoxNjYyMzY0NzMxLCJleHAiOjE2NjIzODYzMzEsIlJPTEVfU1lTVEVNX1VTRVIiOiJ0cnVlIiwiUk9MRV9VU0VSX01BTkFHRVIiOiJmYWxzZSIsIlJPTEVfU0lHTklOR19VU0VSIjoiZmFsc2UifQ.fWm2dbePF7vyXoAfKwwJVX4vOVWrTbtEgS9e--xp8wwSPYdxrY43FZgbn99HyF6b02Cjpa4W1KpkqlLEfM48Iw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://qa.api-sam.etugra.com.pk:6050/rss/service/admin/v1/roles/list",
+					"protocol": "https",
+					"host": [
+						"qa",
+						"api-sam",
+						"etugra",
+						"com",
+						"pk"
+					],
+					"port": "6050",
+					"path": [
+						"rss",
+						"service",
+						"admin",
+						"v1",
+						"roles",
+						"list"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
