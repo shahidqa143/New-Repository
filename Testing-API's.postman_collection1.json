@@ -46,7 +46,7 @@
 		{
 			"name": "Get Modules-list",
 			"protocolProfileBehavior": {
-				"disableBodyPruning": false
+				"disableBodyPruning": true
 			},
 			"request": {
 				"auth": {
